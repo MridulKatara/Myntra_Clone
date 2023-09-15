@@ -5,12 +5,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(253, 248, 249);
+   
 }
+
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 8%;
+    
 }
 nav .logo{
     font-size: 32px;
@@ -47,6 +51,32 @@ nav ul i{
     font-size: 20px;
     margin-left: 10px;
     cursor: pointer;
+}
+h2{
+    font-weight: 500;
+    font-size: 20px;
+}
+.cost{
+    font-weight: bold;
+    font-size: 20px;
+}
+.off{
+    color: orange;
+    font-weight: 500;
+}
+
+.product-details ul li{
+    list-style: none;
+}
+.product-details{
+    margin-top: 15px;
+}
+.material-care ul li{
+    list-style: none;
+  
+}
+.material-care{
+    margin-top: 12px;
 }
 .flex-box{
     display: flex;
@@ -89,6 +119,7 @@ nav ul i{
     font-size: 16px;
     font-weight: 400;
     color: rgb(0, 102, 255);
+    
 }
 .pname{
     font-size: 22px;
@@ -99,8 +130,8 @@ nav ul i{
     color: rgb(255, 136, 0);
 }
 .price{
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 300;
     margin: 20px 0;
 }
 .size{
@@ -109,8 +140,14 @@ nav ul i{
     margin: 20px 0;
     
 }
+.size-fit ul li{
+    list-style: none;
+}
+.size-fit{
+    margin-top: 10px;
+}
 .size p{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
 .psize{
@@ -128,7 +165,7 @@ nav ul i{
 }
 .psize.active{
     border-width: 1.5px;
-    color: #ff5e00;
+    
     font-weight: 500;
 }
 .quantity{
@@ -159,17 +196,20 @@ nav ul i{
     /* color: white; */
 }
 .cart-btn{
-    background-color: #ff5e00;
+    background-color:rgb(246, 124, 124);
     margin-right: 20px;
+    width: 290px;
 }
-.buy-btn{
+.wish-btn{
     /* background-color: #00aeff; */
+    width: 250px;
 } 
 .cart-btn:hover{
-    background-color: #ff3c00;
+    background-color:rgb(247, 158, 158);
 }
-.buy-btn:hover{
-    background-color: #0066ff;
+.wish-btn:hover{
+   border: 2px solid rgb(26, 25, 25);
+   animation-duration: 0.2s;
 }
 
 
