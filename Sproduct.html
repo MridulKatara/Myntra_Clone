@@ -4,138 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Product Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
 </head>
 <body>
-    <nav>
-        <div class="logo">Myntra</div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Offers</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <i class="fas fa-shopping-cart"></i>
-        </ul>
-    </nav>
-
-    <div class="flex-box">
+    <!-- Navbar and other content... -->
+   
+    <!-- Product content -->
+    <div id="container">
         <div class="left">
-            <div class="big-img">
-                <img src="img/p1.png">
+            <div class="inner">
+                <img src="images/item1.png" alt="Image 1">
             </div>
-            <div class="images">
-                <div class="small-img">
-                    <img src="img/p1.png" onclick="showImg(this.src)">
-                </div>
-                <div class="small-img">
-                    <img src="img/p2.png" onclick="showImg(this.src)">
-                </div>
-                <div class="small-img">
-                    <img src="img/p3.png" onclick="showImg(this.src)">
-                </div>
-                <div class="small-img">
-                    <img src="img/p4.png" onclick="showImg(this.src)">
-                </div>
+            <div class="inner">
+                <img src="images/item2.png" alt="Image 2">
+            </div>
+            <div class="inner">
+                <img src="images/item3.png" alt="Image 3">
+            </div>
+            <div class="inner">
+                <img src="images/item4.png" alt="Image 4">
             </div>
         </div>
-
         <div class="right">
-            <div class="url">Home/Clothing/Women Clothing/Louis Philippe Jeans>More By Louis Philippe Jeans</div>
-            <div class="pname">Louis Philippe Jeans</div>
-            <div class="pname">Polo Collar Pure Cotton With Chest Pocket Slim Fit T-shirt</div>
+            <div class="title">
+                <h1>U.S. Polo Assn.</h1>
+                <h1>Printed Collar Pure Cotton Polo Shirtt</h1>
+            </div>
             <div class="ratings">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
+                <p>4.3</p>
+                <p>| &nbsp;&nbsp;&nbsp;&nbsp;46k Ratings</p>
             </div>
-            <div class="price">
-                <p class="cost">₹884</p> <del>MRP ₹1499</del><p class="off">(41% OFF)</p>
-                <div class="price-details">
-                    <h2>Price Details</h2>
-                    <ul>
-                        <li>Maximum Retail Price: Rs. 1499 (Incl. of all taxes)</li>
-                        <li>Discount: 41% OFF</li>
-                        <li>Selling Price: Rs. 884 (Incl. of all taxes)</li>
-                        
-                    </ul>
-                </div>
-                <div class="material-care">
-                    <h2>Material & Care</h2>
-                    <ul>
-                        <li>100% Cotton</li>
-                        <li>Machine Wash</li>
-                    </ul>
-                </div>
+            <div class="price-row">
+                <strong class="discount">Rs 500</strong>
+                <s>Rs 600</s>
+                <span class="offer">20% off</span>
             </div>
-            
+            <span class="inclusive">inclusive of all taxes</span>
+            <div class="size-chart">
+                <p>SELECT SIZE</p>
+                <p>SIZE CHART</p>
+            </div>
             <div class="size">
-                <p>Select Size :</p>
-                <div class="psize active">M</div>
-                <div class="psize">L</div>
-                <div class="psize">XL</div>
-                <div class="psize">XXL</div>
+                <div>S</div>
+                <div>M</div>
+                <div>L</div>
+                <div>XL</div>
+                <div>XXL</div>
             </div>
-            <div class="quantity">
-                <p>Quantity :</p>
-                <input type="number" min="1" max="5" value="1">
+            <div class="bag-wish">
+                <div id="bag"><i class="fas fa-shopping-bag"></i> ADD TO BAG</div>
+                <div id="wish"><i class="fas fa-heart">&nbsp;&nbsp;&nbsp;&nbsp;</i>WISHLIST</div>
             </div>
-            <div class="btn-box">
-                <button class="cart-btn">
-                    <i class="fas fa-shopping-bag"></i> Add to Cart
-                </button>
-                <button class="wish-btn">
-                    <i class="fas fa-heart"></i> Wishlist
-                </button>
+            <p class="del">DELIVERY OPTIONS</p>
+            <input type="text" placeholder="Enter pincode" id="pin">
+            <p class="pin-class">Please enter PIN code to check delivery time & Pay on Delivery Availability</p>
+            <div class="para">
+                <p>100% Original Products</p>
+                <p>Pay on delivery might be available</p>
+                <p>Easy 30 days returns and exchanges</p>
+                <p>Try & Buy might be availablex</p>
             </div>
-            
-            
-            <!-- Product Details -->
-            <div class="product-details">
-                <h2>Product Details</h2>
+            <h4>BEST OFFERS</h4>
+            <div class="para2">
                 <ul>
-                    <li>Black T-shirt for men</li>
-                    <li>Solid</li>
-                    <li>Regular length</li>
-                    <li>Polo collar</li>
-                    <li>1 Pocket</li>
-                    <li>Short, regular sleeves</li>
-                    <li>Knitted pure cotton fabric</li>
-                    <li>Button closure</li>
+                    <li>Applicable on: Orders above Rs. 799 (only on first purchase)</li>
+                    <li>Coupon code: <strong>HELLO200</strong></li>
+                    <li>Coupon Discount: Rs. 87 off (check cart for final savings)</li>
                 </ul>
+                <p>View Eligible Products</p>
             </div>
-            
-            <!-- Size & Fit -->
-            <div class="size-fit">
-                <h2>Size & Fit</h2>
+            <b>EMI Option Available</b>
+            <div class="para3">
                 <ul>
-                    <li>Slim Fit</li>
-                    <li>Size worn by the model: M</li>
-                    <li>Chest: 39"</li>
-                    <li>Height: 6'</li>
+                    <li>EMI starting at Rs 17/month</li>
                 </ul>
-            </div>
-            
-            <!-- Material & Care -->
-            <div class="material-care">
-                <h2>Material & Care</h2>
-                <ul>
-                    <li>100% Cotton</li>
-                    <li>Machine Wash</li>
-                </ul>
+                <p>View plans</p>
             </div>
         </div>
     </div>
 
+    <!-- Footer and other content... -->
+
     <script>
-        let bigImg = document.querySelector('.big-img img');
-        function showImg(pic){
-            bigImg.src = pic;
-        }
+        // JavaScript code goes here...
     </script>
 </body>
 </html>
