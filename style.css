@@ -10,24 +10,25 @@
 
 #container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 20px;
     margin-left: 20px;
-    margin-bottom: 700px;
+    margin-bottom: 20px;
 }
 
 .left {
-    width: 60%;
-    height: 400px;
+    flex: 0 0 calc(60% - 20px);
+    height: 90%;
     display: flex;
     flex-wrap: wrap;
     gap: 2%;
 }
 
 .right {
-    width: 40%;
-    height: 400px;
-    margin-left: 3%;
+    flex: 0 0 calc(40% - 20px);
+    height: auto;
+    margin-left: 20px;
 }
 
 .inner {
@@ -36,7 +37,7 @@
 }
 
 .inner img {
-    width: 85%;
+    width: 100%;
 }
 
 .right h1:nth-child(1) {
@@ -131,15 +132,17 @@ s {
 
 .bag-wish {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 30px;
-
+    width: 90%;
+    height: 20px;
 }
 
-
 .bag-wish div:nth-child(1) {
-    background-color: #ff3e6c;
-    border: 1px solid #ff3e6c;
+    flex: 0 0 calc(50% - 20px);
+    background-color: #fe7f9d;
+    
     color: #fff;
     margin-right: 20px;
     padding: 4%;
@@ -147,17 +150,34 @@ s {
 }
 
 .bag-wish div:nth-child(2) {
+    flex: 0 0 calc(50% - 20px);
     border: 1px solid lightgray;
     padding: 4%;
     border-radius: 3px;
+    width: 30%;
 }
+#bag {
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding-bottom: 7%;
+    color: #000; /* Set the color to black or the desired color */
+}
+#bag:hover{
+    background-color: rgb(254, 176, 189);
+    transition: 0.3s;
+
+}
+
 
 .del {
     font-weight: 500;
+    margin-top: 90px;
 }
 
 #pin {
-    width: 50%;
+    width: 30%;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 3%;
@@ -186,16 +206,15 @@ s {
     font-weight: 500;
     color: #ff3f6c;
 }
-
 #bag,
 #wish {
     cursor: pointer;
-    width: 230px;
-    height: 10px;
+    width: 250%;
+    height: 30%;
     text-align: center;
-   padding-bottom: 7%;
-   
+    padding-bottom: 7%;
 }
+
 
 .inner img:hover {
     transform: scale(1.1);
@@ -204,13 +223,80 @@ s {
 }
 
 #wish:hover {
-    border: 2px solid
-    black;
+    border: 2px solid black;
     color: black;
     transition: border-color 0.3s ease, color 0.3s ease;
 }
 
+
 .size div:hover {
     border: 2px solid black;
     transition: border-color 0.3s ease;
+}
+
+.product-details {
+    margin-top: 30px;
+    padding: 20px;
+   
+    background-color: #f9f9f9;
+    margin-right: 200px; 
+}
+.product-details h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-details h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.product-details p {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.product-details ul {
+    
+    padding-left: 0; 
+}
+
+.product-details ul li {
+    margin-left: 20px; 
+}
+
+.product-details b {
+    font-weight: bold;
+}
+
+
+
+
+
+/* Medium screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .left, .right {
+        flex: 0 0 calc(100% - 20px);
+        margin-left: 0;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 1025px) {
+    #container {
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-bottom: 700px;
+    }
+
+    .left {
+        flex: 0 0 calc(60% - 20px);
+    }
+
+    .right {
+        flex: 0 0 calc(40% - 20px);
+        margin-left: 20px;
+    }
 }
