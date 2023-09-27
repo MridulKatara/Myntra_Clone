@@ -3,6 +3,7 @@ const menuContainer = document.querySelector(".menu-container ul");
 
 mobileMenuButton.addEventListener("click", () => {
   menuContainer.classList.toggle("active");
+  console.log("a")
 });
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
